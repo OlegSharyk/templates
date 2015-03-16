@@ -1,0 +1,196 @@
+/*
+----------------------------------------------------------------------------------------------------
+[Table of Contents]
+
+1. Base page configuration
+2. Elements of interface, Global classes and other blocks
+3. Layouts
+   3.1 Base layout
+4. Blocks
+   4.1 blockName                       		  | .className
+
+----------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+####################################################################################################
+[1. Base page configuration]
+####################################################################################################
+*/
+
+body,div,dl,dt,dd,ul,ol,li,form,table,tr,td,
+h1,h2,h3,h4,h5,h6,pre,p,span,b,i,
+input,textarea, fieldset { margin:0; padding:0;}
+
+ul { list-style-type:none;}
+img, fieldset { border:none;}
+table { border-collapse:collapse; border-spacing:0;}
+
+h1,h2,h3,h4,h5,h6 { font-weight:normal;}
+
+html,
+body {
+	height:100%;
+}
+body { 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+	line-height: 16px;
+    color:#000;
+    background:#fff;
+}
+
+input, textarea, select, label { font-size:1em; font-family:inherit;}
+input[type="submit"] { cursor:pointer;}
+
+a { 
+    color:#1e98ca;
+    -webkit-transition:color .3s ease;
+    -moz-transition:color .3s ease;
+    -ms-transition:color .3s ease;
+    -o-transition:color .3s ease;
+    transition:color .3s ease;
+	text-decoration:none;
+}
+a:hover {
+
+}
+
+/* ===== [ link-preset ] ===== */
+
+.b-link { display:inline-block; vertical-align:top; text-decoration:none;}
+    .b-link__inner { line-height:1.2; text-decoration:none; border-bottom:1px solid;}
+
+a.b-link:hover { }
+
+.b-link_pseudo { }
+    .b-link_pseudo .b-link__inner { border-bottom:1px dotted;}
+
+/*
+####################################################################################################
+[2. Elements of interface, Global classes and other blocks]
+####################################################################################################
+*/
+
+.g-clear { clear:both;}
+.g-right { float:right !important;}
+.g-left { float:left !important;}
+
+.g-black { color:#000 !important;}
+.g-red { color:#c00 !important;}
+
+.g-hidden { display:none !important;}
+
+.line { overflow:visible;}
+
+.line:after { 
+    font-size:0;
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* ###########################################################################
+    [3. Layouts]
+########################################################################### */
+
+.wrap {
+	position:relative;
+	width: 100%;
+}
+
+.case {
+	width:1000px;
+	margin:0 auto;
+}
+
+/* header */
+.hdr {
+
+}
+
+/* content */
+.cnt {
+
+}
+
+
+/* footer */
+.ftr { 
+    position:relative;
+}
+
+/* ###########################################################################
+    [4. Blocks]
+########################################################################### */
+
+/*---------------------------------------------------------------------------
+    [4.1 Icons]
+---------------------------------------------------------------------------*/
+
+.ico {
+	display:inline-block;
+	/*background:url(../img/ico.png) no-repeat;*/
+}
+
+.ico_someicon {
+	height:16px;
+	width:15px;
+}
+
+
+/*---------------------------------------------------------------------------
+    [4.2 Buttons]
+---------------------------------------------------------------------------*/
+
+.btn { 
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+}
+a.btn:hover { }
+a.btn:active { }
+
+
+/*---------------------------------------------------------------------------
+    [4.3 Forms]
+---------------------------------------------------------------------------*/
+
+.b-input-i {
+	position:relative;
+	width: 100%;
+}
+
+.b-input {
+	font-size: 14px;
+	line-height: 17px;
+	padding: 5px 13px;
+	margin: 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.b-ta {}
+
+/*---------------------------------------------------------------------------
+    [4.4 Elements]
+---------------------------------------------------------------------------*/
+
+
+
+
+
+/* ####################################################################################################
+[5 Jquery/javascript plugins]
+#################################################################################################### */
+/*---------------------------------------------------------------------------
+    [5.1 PIE behavior for IE6-9 ]
+---------------------------------------------------------------------------*/
+
+.btn { behavior:url('css/PIE.htc');}
